@@ -1,0 +1,33 @@
+#a{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+}
+#a:hover{
+    background-color: green;
+    transition: ease 1s;
+    transform: rotate(360deg);
+}
+#xyz{
+    height: 500px;
+    width: 500px;
+    background-image: url(1.jpg);
+    border-radius: 50px;
+}
+#abc{
+    height: 500px;
+    width: 500px;
+}
+#abc:hover{
+    transition: ease 1s;
+    background-color: rgba(3, 3, 3, 0.5);
+    box-shadow: 10px 10px 10px black;
+    border-radius: 50px;
+}
+img:hover{
+    transition: ease 1s;
+}
+#xyz:hover{
+    transform: scale(1.1);
+    transition: ease 1s;
+}

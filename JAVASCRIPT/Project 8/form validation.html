@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return myfun()">
+       <input type="password" id="Pass1">
+       <span id="Message1"></span><br>
+       <input type="password" id="Pass2">
+       <span id="Message2"></span><br>
+       <input type="Submit" value="Submit">
+    </form>
+    <script>
+    function myfun(){
+       var a=document.getElementById("Pass1").value;
+       var b=document.getElementById("Pass2").value; 
+    if(a==""){
+             document.getElementById("Message1").innerHTML="Please Enter Password";
+             return false;
+    } 
+    if(a.length<5){
+             document.getElementById("Message1").innerHTML="Please Enter Greater Than Five";
+             return false;
+    }    
+    if(a.length>10){
+             document.getElementById("Message1").innerHTML="Only Maximum Ten Charactors";
+             return false;
+    }          
+    if(a!=b){
+             document.getElementById("Message2").innerHTML="Password Not Match";
+             return false;
+    }                          
+    }
+    </script>
+</body>
+</html>

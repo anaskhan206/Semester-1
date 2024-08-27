@@ -1,0 +1,25 @@
+input:out-of-range{
+    color: red;
+}
+input:in-range{
+    color: green;
+    background-color: aquamarine;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+ul #a{
+    list-style-type: none;
+    float: left;
+    margin-left: 10px;
+}
+ul #x{
+    list-style-type: none;
+}
+ul li ul li{
+    display: block;
+}
+ul li:hover ul li{
+    display: block;
+}
